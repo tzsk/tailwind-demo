@@ -1,8 +1,14 @@
 <template>
-  <div>
-    <div>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div class="robustwealth">
+    <div class="container mx-auto" :class="{ 'px-1': true }">
+      <router-link to="/" class="text-primary font-bold">Home</router-link> |
+      <router-link to="/about" class="text-primary font-bold">
+        About
+      </router-link>
+      |
+      <router-link to="/login" class="text-primary font-bold">
+        Login
+      </router-link>
     </div>
     <router-view />
   </div>
